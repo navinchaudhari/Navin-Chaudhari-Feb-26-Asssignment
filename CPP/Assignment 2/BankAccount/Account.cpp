@@ -39,13 +39,18 @@ float Account::getBalance() const
 // Behaiviors
 void Account::deposit(int amount)
 {
-    balance += amount;
-    cout << "Success" << endl;
+    if (amount > 0)
+    {
+        balance += amount;
+        cout << "Success" << endl;
+    }
+    else
+        cerr << "Failed" << endl;
 }
 
 void Account::withdraw(int amount)
 {
-    if (amount > balance)
+    if (amount > 0 && amount > balance)
     {
         cerr << "Insufficient Balance" << endl;
         cerr << "Failed" << endl;
