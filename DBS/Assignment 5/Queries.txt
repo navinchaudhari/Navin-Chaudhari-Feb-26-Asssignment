@@ -1,0 +1,43 @@
+1) Write a query that will give you all orders for more than Rs. 1,000.
+-> Select * from orders
+   where Amt > 1000;
+
+2) Write a query that will give you the names and cities of all salespeople in
+London with a commission above .10. 
+-> Select Sname, City from Salespeople
+   Where city = 'London' AND Comm > .10;
+
+3) Write a query on the Customers table whose output will exclude all customers
+with a rating <= 100, unless they are located in Rome.
+-> Select * from Customers
+   Where rating > 100 OR City = 'Rome';
+
+4) What will be the output from the following query?
+
+ Select * from Orders
+ where (amt < 1000 OR
+ NOT (odate = ‘1990-10-03’
+ AND cnum > 2003)); 
+
+-> This will print all the rows whose Amount is less than 1000 and it will also print
+   Rows whose amount is greater than 1000 but only if there order date is not eual to 1990-10-03
+   and cnum > 2003.
+   If date is not matched OR Cnum is not matched then it will print that rows also.
+
+5) What will be the output of the following query?
+
+ Select * from Orders
+ where NOT ((odate = '1990-10-03' OR snum
+ >1006) AND amt >= 1500);
+
+-> In this query if date is (1990-10-03 OR sunm > 1006) AND amt >= 1500 if both or any of the condition falses 
+   only and only then it will prints rows.
+
+
+6) What is a simpler way to write this query?
+
+ Select snum, sname, city, comm From Salespeople
+where (comm > .12 OR comm <.14); 
+
+-> Select snum, sname, city, comm from Salespeople
+   Where comm > 0.12 OR comm < 0.14;
