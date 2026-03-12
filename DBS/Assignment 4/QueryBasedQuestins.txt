@@ -1,0 +1,22 @@
+Create table 
+SEMP (
+	EMPNO char(4),
+	EMPNAME char(20),
+	BASIC float,
+	DEPTNO char(2),
+	DEPTHEAD char(4)
+
+);
+
+Create table
+SDEPT (
+	DEPTNO CHAR(2),
+	DEPTNAME CHAR(15)
+);
+
+Insert into Sdept
+values (10, 'Developement');
+
+Insert into
+SDEPT (Deptno, deptname)
+values (20, 'Training');

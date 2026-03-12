@@ -1,0 +1,30 @@
+create table
+CUSTOMERS
+(
+	Cnum int(4),
+	Cname varchar(10),
+	City varchar(10),
+	Rating int(4),
+	Snum int(4)
+);
+
+insert into CUSTOMERS
+values(2001, 'Hoffman', 'London', 100, 1001);
+
+INSERT INTO CUSTOMERS
+VALUES (2002, 'Giovanni', 'Rome', 200, 1003);
+
+Insert into
+customers (Cnum, Cname, City, Rating, Snum)
+values (2003, 'Liu', 'San Jose', 200, 1002);
+
+Insert into
+Customers (Cnum, cname, city, rating, Snum)
+Values (2004, 'Grass', 'Berlin', 300, 1002);
+
+Insert into 
+Customers (cnum, cname, city, rating, Snum)
+values
+(2006, 'Clemens', 'London', 100, 1001),
+(2008, 'Cisneros', 'San Jose', 300, 1007),
+(2007, 'Pereira', 'Rome', 100, 1004);

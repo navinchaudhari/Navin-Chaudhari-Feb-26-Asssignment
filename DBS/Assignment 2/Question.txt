@@ -1,0 +1,15 @@
+1) Which field of the Customers table is the primary key?
+-> Customer num (Cnum) is primary key of the Customer table.
+
+2) What is the 4th column of the Customers table?
+-> 4th column of the customer table is `Rating` which is of type int and size of 4 Bytes.
+
+3) What is another word for row? For column?
+-> Row    : Oppotunity, Tuble, Entity
+   Column : Attribute, Method
+4) Why isn’t it possible to see the first five rows of a table?
+-> 1. Because rows in table are stored in scattered / fragemented all over the DB server hard disk.
+   2. Whereever there is space it will store in that space.
+   3. But while inserting it will stored address of that row that is constant.
+   4. When we use select from table the order of rows are depend on rows address.
+   5. Thats whya it is not possible to see first and rows of the table.
