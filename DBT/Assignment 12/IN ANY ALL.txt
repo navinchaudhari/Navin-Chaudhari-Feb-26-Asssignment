@@ -1,0 +1,32 @@
+		Using the operators IN, ANY, and ALL
+
+1) Write a query that selects all customers whose ratings are equal to or greater than
+   ANY of Serres’. 
+=> SELECT * from customers
+	Where rating >= ANY
+	(Select rating from Customers
+	Where snum = 
+	(SELECT Snum from Salespeople
+	Where sname = 'Serres'));
+
+2) Write a query using ANY or ALL that will find all salespeople who have no
+customers located in their city.
+=> Select * from salespeople 
+	Where City <> ALL
+	(Select distinct City from Customers
+	WHERE snum = Salespeople.snum);
+
+3) Write a query that selects all orders for amounts greater than any for the
+customers in London.
+=> Select * from orders 
+	Where amt > any
+	(Select amt from orders
+	where cnum = ANY
+	(Select cnum from customers where city = 'London'));
+
+4) Write the above query using MIN or MAX. 
+=> Select * from orders
+	Where amt >
+	(Select Min(amt) from orders 
+	where cnum = ANY
+	(Select Cnum from customers where city = 'London'));

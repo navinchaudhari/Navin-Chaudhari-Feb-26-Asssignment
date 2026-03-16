@@ -1,0 +1,26 @@
+		Subqueries
+
+1) Write a query that uses a subquery to obtain all orders for the customer named
+Cisneros. Assume you do not know his customer number (cnum).
+=> Select * from orders where cnum = (Select cnum from Customers
+	Where cname = 'Cisneros');
+
+2) Write a query that produces the names and ratings of all customers who have
+above-average orders.
+=> Select cname, rating from Customers
+	Where cnum = ANY (Select cnum from Orders
+	 where amt >
+	(Select avg(amt) from Orders));
+
+			OR
+Select cname, rating from Customers
+	Where cnum IN (Select cnum from Orders
+	 where amt >
+	(Select avg(amt) from Orders));
+
+3) Write a query that selects the total amount in orders for each salesperson for
+whom this total is greater than the amount of the largest order in the table.
+=> Select snum, sum(AMT) from Orders
+	Group by snum
+	Having sum(amt) > (Select max(amt) from orders);
+
