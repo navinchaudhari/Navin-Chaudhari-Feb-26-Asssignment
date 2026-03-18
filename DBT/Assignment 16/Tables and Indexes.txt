@@ -1,0 +1,32 @@
+		Creating Tables and Indexes
+
+1) Write a command that will enable a user to pull orders grouped by date out of the
+Orders table quickly.
+=> Select Odate, Count(*) from orders
+	Group by Odate;		// Gives values in 0.007 sec
+
+Create index i_Date on Orders(Odate);
+// After Creating index gives values in 0.033 sec
+
+// It is slow after creating index is because if rows in table is very less in that condition 
+   Full table scan is efficient than index but it will be faster when there are large number of rows.
+
+2) If the Orders table has already been created, how can you force the onum field to
+be unique (assume all current values are unique)?
+=> We can make it Unique by adding unique constraint in it; so after adding Unique it will check while inserting values
+   inside column is unique or not if not then it will give an error.
+	
+	// Command to store Unique values in Onum column
+	Alter Table Orders Add unique(Onum);
+
+3) Create an index that would permit each salesperson to retrieve his or her orders
+grouped by date quickly.
+=> Create index i_date_snum on Orders(Snum, Odate);
+
+	Select Sname, Odate, count(*) from Salespeople
+	Join Orders on salespeople.snum = orders.snum
+	Group by Sname, Odate;
+
+4) Let us assume that each salesperson is to have only one customer of a given
+rating, and that this is currently the case. Enter a command that enforces it.
+=> Create Unique index i_rating_snum On customers(rating, snum);
