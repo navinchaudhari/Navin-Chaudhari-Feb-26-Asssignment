@@ -1,0 +1,163 @@
+1) 
+DELIMITER //
+create procedure abc()
+
+BEGIN
+	declare x int default 15;
+	if x < 20 then
+	Insert into tempp values(x, 'IF');
+	end if;
+	
+END //
+Delimiter ;
+
+2)
+DELIMITER //
+
+create procedure bcd()
+BEGIN
+	declare x int default 200;
+	if x < 200 then
+		Insert Into Tempp values(x, 'IF');
+	Else
+		Insert Into Tempp values(x, 'Else');
+	End IF;
+	
+END; //
+DELIMITER ;
+
+3)
+
+Delimiter //
+Create procedure cdf()
+
+BEGIN
+	Declare c int default 300;
+	if c < 300 then
+	Insert into tempp values(c, 'IF');
+	
+	ELSEIF c = 300 then
+	Insert into tempp values(c, 'ELSEIF');
+
+	ELSE
+	Insert into tempp values(c, 'ELSE');
+
+	END IF;
+END; //
+
+DELIMITER ;
+
+
+4)
+Delimiter //
+create procedure dfg()
+Begin
+	Declare x int Default 5000;
+	case
+	WHEn x  < 6000 Then 
+	INsert into tempp values(x, 'WHEN First');
+
+	WHEN x > 6000 THEN
+	Insert into tempp values(x, 'When Second');
+
+	ELSE
+	Insert into tempp values(x, 'ELSE');
+	
+	End case;
+END; //
+Delimiter ;
+
+
+
+5)
+Delimiter //
+create procedure fgh()
+Begin
+	Declare x int Default 7000;
+	case
+	WHEn x  < 6000 Then 
+	INsert into tempp values(x, 'WHEN First');
+
+	WHEN x > 6000 THEN
+	Insert into tempp values(x, 'When Second');
+
+	ELSE
+	Insert into tempp values(x, 'ELSE');
+	
+	End case;
+END; //
+Delimiter ;
+
+6)
+Delimiter //
+create procedure ghi()
+Begin
+	Declare x int Default 6000;
+	case
+	WHEn x  < 6000 Then 
+	INsert into tempp values(x, 'WHEN First');
+
+	WHEN x > 6000 THEN
+	Insert into tempp values(x, 'When Second');
+
+	ELSE
+	Insert into tempp values(x, 'ELSE');
+	
+	End case;
+END; //
+Delimiter ;
+
+7)
+Delimiter //
+create procedure hij()
+Begin
+	Declare x int Default 6000;
+
+	case
+
+	WHEn x  < 6000 Then 
+	INsert into tempp values(x, 'WHEN First');
+
+	WHEN x > 6000 THEN
+	Insert into tempp values(x, 'When Second');
+	
+	End case;
+END; //
+Delimiter ;
+
+
+8)
+Delimiter //
+create procedure ijk()
+Begin
+	Declare x int Default 6000;
+
+	case
+
+	WHEn x  < 6000 Then 
+	INsert into tempp values(x, 'WHEN First');
+
+	WHEN x > 6000 THEN
+	Insert into tempp values(x, 'When Second');
+	
+	ELSE
+		Begin
+		End;
+	End case;
+END; //
+Delimiter ;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

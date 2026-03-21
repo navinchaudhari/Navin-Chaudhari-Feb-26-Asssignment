@@ -1,0 +1,112 @@
+		Cursors
+1)
+Delimiter //
+Create Procedure abc()
+
+BEGIN
+	Declare x int default 1;
+	declare a int;
+	declare b varchar(20);
+	declare c int;
+	declare d int;
+	declare e char(1);
+	declare f int;
+	
+	Declare  c1 cursor For Select * from EMP;
+	Open c1;
+	
+	while x <= 4 do
+	fetch c1 into a,b,c,d,e,f;
+	
+	Insert into temp values(a,b,c,d,e,f);
+	set x = x+1;
+	
+	END While;
+	close c1;
+END; //
+
+Delimiter ;
+
+
+2)Continue Handler
+Delimiter //
+Create procedure bcd()
+BEGIN
+	Declare x int default 0;
+	Declare a int;
+	Declare b varchar(20);
+	Declare c int;
+	Declare d int;
+	Declare e char(1);
+	Declare f int;
+	Declare y int;
+	
+	Declare c1 Cursor for Select * from emp where deptno = 1;
+	Declare continue handler for NOT Found set y = 1;
+
+	open c1;
+
+	cursor_c1_loop : LOOP
+	
+
+	fetch c1 into a,b,c,d,e,f;
+	if y = 1 then
+		Leave cursor_c1_loop;
+	end if;
+	Insert into temp values(a,b,c,d,e,f);
+	set x = x+1;
+
+	end loop cursor_c1_loop;
+
+END; //
+Delimiter ;
+	
+
+3)Continue Handler
+Delimiter //
+Create procedure bcd()
+BEGIN
+	Declare x int default 0;
+	Declare a int;
+	Declare b varchar(20);
+	Declare c int;
+	Declare d int;
+	Declare e char(1);
+	Declare f int;
+	Declare y int;
+	
+	Declare c1 Cursor for Select * from emp where deptno = 1 AND job = 'C';
+	Declare continue handler for NOT Found set y = 1 ;
+
+	open c1;
+
+	cursor_c1_loop : LOOP
+	
+
+	fetch c1 into a,b,c,d,e,f;
+	if y = 1 then
+		Leave cursor_c1_loop;
+	end if;
+	Insert into temp values(a,b,c,d,e,f);
+	set x = x+1;
+
+	end loop cursor_c1_loop;
+
+END; //
+Delimiter ;
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

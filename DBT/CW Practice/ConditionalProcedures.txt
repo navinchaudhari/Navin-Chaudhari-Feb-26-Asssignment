@@ -1,0 +1,49 @@
+1) 
+DELIMITER //
+create procedure abc()
+
+BEGIN
+	declare x int default 15;
+	if x < 20 then
+	Insert into tempp values(x, 'IF');
+	end if;
+	
+END //
+Delimiter ;
+
+2)
+DELIMITER //
+
+create procedure bcd()
+BEGIN
+	declare x int default 200;
+	if x < 200 then
+		Insert Into Tempp values(x, 'IF');
+	Else
+		Insert Into Tempp values(x, 'Else');
+	End IF;
+	
+END; //
+DELIMITER ;
+
+3)
+
+Delimiter //
+Create procedure cdf()
+
+BEGIN
+	Declare c int default 300;
+	if c < 300 then
+	Insert into tempp values(c, 'IF');
+	
+	ELSEIF c = 300 then
+	Insert into tempp values(c, 'ELSEIF');
+
+	ELSE
+	Insert into tempp values(c, 'ELSE');
+
+	END IF;
+END; //
+
+DELIMITER ;
+	

@@ -1,0 +1,25 @@
+1) WHILE loop
+DELIMITER //
+create procedure abc()
+BEGIN
+	Declare x int default 0;
+	While x < 5 Do
+	Insert into tempp values(x, 'While');
+	set x = x+1;
+	END while;
+End; //
+Delimiter ;
+
+2) Repeat loop
+
+DELIMITER //
+create procedure bcd()
+BEGIN
+	Declare x int default 1;
+	Repeat
+	Insert into tempp values(x, 'Repeat');
+	set x = x+1;
+	Until x > 5
+	END Repeat;
+End; //
+Delimiter ;
