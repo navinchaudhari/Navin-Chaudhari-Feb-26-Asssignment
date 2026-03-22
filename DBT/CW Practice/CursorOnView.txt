@@ -1,0 +1,27 @@
+
+Delimiter //
+create procedure p1()
+BEGIN
+	declare x int;
+	Declare y float;
+	Declare count int;
+	
+	Declare c1 cursor for Select * from commisions;
+	Declare continue handler for NOT found set count = 1;
+	open c1;
+
+	
+	loop_c1 : loop
+		fetch c1 into x,y;
+		if count = 1 then
+		leave loop_c1;
+		end if;
+		
+		
+		Insert into tempp values(x, concat(@n, ' comm'));
+	end loop loop_c1;
+	
+	close c1;
+END; //
+
+Delimiter ;
