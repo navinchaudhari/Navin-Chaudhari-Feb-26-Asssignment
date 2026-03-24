@@ -1,0 +1,68 @@
+1. What is Java?
+-> java is an High level Object oriented Programming Language use to develope
+   various services and Applications, Developed by Sun Microsystem in 1995.
+
+2. Is Java platform dependent or independent?
+-> Java is Platfrom Independent but its JVM that is run time environment is
+   is Platform Dependent.
+
+3. What is JVM?
+-> JVM stands for Java Virtual Machine. It is used to run java programs on different
+   machines. It convert Byte code into machine code and thats why it is platform dependent.
+
+4. What is JDK and JRE?
+-> JDK is Acronym for JAVA Development Kit it is used to develope complete application.
+   It has compiler, Debugger, library classes, JRE, JVM to run code.
+   JRE is acronym for Java Runtime Environment is a software that provides necessary
+   libraries and JVM to run Java Program.
+
+5. Why is Java called “Write Once, Run Anywhere”?
+-> In java code compile by compiler is converted into Byte code which is not machine specific
+   code and after that Byte code is then converted into machine code by JVM which is platform 
+   Dependent. So that any byte code of java can be run on any machine using that machines JVM.
+
+6. What is a class in Java?
+-> Class is blueprint or template by using we can create logical/physical entity.
+
+7. What is an object?
+-> It is an instance of a class i.e physical/logical entity.
+
+8. What is the main method in Java?
+-> main method in java is used to initialize a program/ it is entry point to start an execution of program.
+
+9. What is the use of System.out.println()?
+-> It is used to show output on a screen.
+
+11. What are data types in Java?
+->  It specify that what type of data we can store inside variable. In Java there are mainly two types of Data
+    1) Primitive Data type    
+    2) Non Primitive Data type 
+
+12. Give examples of primitive data types
+->  byte, short, int, long, float, double, char, boolean.
+
+13. What is a variable?
+-> It is a name given to a memory location address.
+
+14. How do you declare a variable in Java?
+->  int num = 10;
+    here num is a variable name, int is a primitive data type and 10 is value assign to it.
+
+15. What is the difference between int and float?
+->  into stores normal integer but float stores decimals. By default type of int is integer but type of float is double.
+
+16. What is type casting?
+->  Converting one data type into another data type.
+
+17. What is the default value of int?
+->  0 only for instance and static variable.
+
+18. What is a keyword in Java?
+->  It is predefined word in java which has specific meaning to compiler
+
+19. Can we use reserved keywords as variable names?
+-> No
+
+20. What is the difference between = and ==?
+-> '=' is used to assign a value and '==' is used for equality check.
+
