@@ -1,0 +1,112 @@
+Insert INTO Flats Values
+(1, '101', 'Block A'),
+(2, '102', 'Block B'),
+(3, '103', 'Block C'),
+(4, '104', 'Block D');
+
+
+Insert into Residents values
+(1, 'Navin', '1'),
+(2, 'Bhavesh', '2'),
+(3, 'Vinit', '3'),
+(4, 'Anil', '4'),
+(5, 'Bharati', '4');
+
+INSert into Maintenance Values
+(5, 1, 10000 ),
+(2, 2, 200 ),
+(3, 3, 100 ),
+(4, 4, 1000 );
+
+Select * from residents, Flats, Maintenence
+Where residents.flatID = flats.flatID AND
+Where residents.flatID = Maintenence.FlatID AND
+Where Block = 'Block A' OR
+Where Amount > 200;
+
+
+Fetch the first 5 maintenance records. 
+Select * from Maintenance limit 5;
+
+
+
+5. (3 Marks)
+Fetch FlatNumber and Amount of the flat with the highest maintenance fee.
+Select distinct flatNumber, amount from Maintenance, flats where amount =
+(Select max(amount) from Maintenance);
+
+ (3 Marks)
+Create a view MaintenanceSummary showing FlatNumber and Amount. Update an
+amount using this view. 
+
+
+create view v1 as
+select flatID, Amount from maintenance;
+
+update Maintenance set amount = 2000 where flatid = 1;
+
+Perform a LEFT JOIN between Flats and Maintenance tables. 
+
+Select flats.flatid, flatNumber, Block, MaintenenceID, Amount From Flats left join
+Maintenance on flats.flatid = Maintenance.flatid;
+
+
+Create a temporary table for residents in Block 'B' and drop it after use.
+
+create table tempB
+as
+Select * from residents where flatid = 
+(select flatid from flats where block = 'Block B');
+
+Drop table tempb;
+
+9. (3 Marks)
+Write a procedure GetFlatInfo to return FlatNumber and TotalMaintenance
+
+delimiter //
+create procedure  GetFlatInfo()
+begin
+	Select Flatnumber, amount from Maintenance, Flats where Flats.flatid = Maintenance.flatid;
+END; //
+Delimiter ;
+
+Fetch the second-highest maintenance fee.
+
+Select max(amount) from maintenance where amount < (Select max(amount) from maintenance);
+
+Write a query to fetch flats that do not have any maintenance records.
+Select flats.flatid from flats, maintenance where flats.flatid != maintenance.flatid and maintenance.MaintenenceID IS NULL;
+
+
+
+11. (2 Marks)
+Fetch flats with more than 3 residents using HAVING
+Select * from flats where flatid = (
+Select flatid from residents group by flatid having count(*) > 3
+);
+
+Write a query to find the total maintenance amount collected for each flat and display
+the FlatNumber along with total amount, sorted in descending order.
+
+select flatNumber, amount from flats, Maintenance where flats.flatid = ANY
+(Select flatid from Maintenance group by flatid) order by 2 desc;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

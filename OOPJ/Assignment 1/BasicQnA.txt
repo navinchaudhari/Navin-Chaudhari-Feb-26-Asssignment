@@ -66,3 +66,65 @@
 20. What is the difference between = and ==?
 -> '=' is used to assign a value and '==' is used for equality check.
 
+21. What is an if statement?
+->  It is a conditional statement used to check the condition. It allows to execute specific block of code
+    only if certain condition is true.
+ 
+22. Difference between if and switch?
+->  If     : 1) Check condition to run code
+	     2) if statement can check ranges
+	     3) Works with any data type
+	     4) Evalutes condition one by one until find a match
+	     5) Uses an else block at the end
+
+    Switch : 1) Takes an expression and executes the matching case for that expression
+	     2) Limited to int, char, short, byte, String, enums
+	     3) Much easier to read for multiple specific condition
+	     4) Uses a jump table, which can be faster for many cases
+	     5) Uses a default case at the end
+
+
+23. What is a loop?
+->  It is repetation of a program/code. Used to repeat specific block of code multiple times.
+
+24. Types of loops in Java?
+->  1) for loop
+    2) while loop
+    3) do while loop
+
+25. Difference between for loop and while loop
+->  For loop  : 1) if we know no of iteration then use for loop
+		2) Syntax = for(int i =0 ; i<10; i++){ //Code }
+		3) counter variable usually local to the loop
+
+    Wile loop : 1) If we don't know iteration of a program then use while loop
+		2) Syntax = while(condition) {}
+		3) counter variable is declared outside the loop
+
+26. What is break statement?
+->  It is a transfer statement. It transfer the control from inside loop or switch outside the loop;
+
+27. What is continue statement?
+->  It is a transfer statement. It skips current iteration and starts from next iteration. Used only in loops.
+
+28. What will happen if we don’t write the main method?
+->  Program will not execute.
+
+29. Can we run a Java program without class?
+->  Fundamentaly it is not allowing but by using some newer features we can do that.
+
+30. What happens if we don’t compile a Java program?
+->  It will not execute by the JVM because compilation process is necessory to convert java file to byte code
+    which can be understand by JVM and run.
+
+31. Can a variable change its data type?
+->  No variable cannot change its datatype bacause in java every variable is assigned a fixed datatype at compile time.
+
+32. What is the size of int in Java?
+->  4 Byte.
+
+33. Why Java does not support pointers directly?
+->  Because pointers makes code more complex. Pointers gives acccess to the memory so to prevent it and for safety.
+
+		
+		
