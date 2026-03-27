@@ -13,10 +13,6 @@
 import java.util.Scanner;
 class Questions27To30{
 	
-	
-	
-
-
 	public static void main(String args[]){
 		finiteTable();
 
