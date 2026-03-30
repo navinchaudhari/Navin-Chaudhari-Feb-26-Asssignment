@@ -19,9 +19,21 @@ values.
 import java.util.Scanner;
 
 class Questions1To5{
+	
+	int x;
 
 	public static void main(String args[]){
-		nextNPreChar();
+		
+		int [] a,b,c = new int[5];
+		a = new int[3];
+		b = new int[4];
+		System.out.println(a);
+
+		System.out.println(b);
+
+		System.out.println(c);
+
+		//nextNPreChar();
 
 	}
 
