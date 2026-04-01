@@ -1,0 +1,12 @@
+Requirements:
+        ● Base class: Vehicle
+● Derived classes: Car, Bike
+● System should:
+        ○ Track brand & speed
+○ Store fuel type / mileage
+● Use:
+        ○ Static block → system initialization
+○ Non-static block → object creation log
+● Allow:
+        ○ Updating vehicle speed
+● Display vehicle details
