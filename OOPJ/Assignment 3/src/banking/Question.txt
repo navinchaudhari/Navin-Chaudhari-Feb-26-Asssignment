@@ -1,0 +1,14 @@
+Question 3: Design a Banking System
+Requirements:
+Each account has:
+● Account number, holder name
+● Balance
+System should:
+● Store multiple accounts
+● Deposit & withdraw money
+● Prevent withdrawal if balance is insufficient
+● Track total number of accounts
+Support:
+● Overloaded methods for deposit (cash / online)
+Display:
+● Account details with updated balance
