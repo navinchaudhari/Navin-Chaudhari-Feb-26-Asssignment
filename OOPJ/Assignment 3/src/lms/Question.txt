@@ -1,0 +1,12 @@
+Requirements:
+Each book has:
+● Book ID, title, author
+● Availability status
+System should:
+● Store multiple books
+● Issue and return books
+● Prevent issuing unavailable books
+Support:
+● Track total books
+Display:
+● Available and issued books
