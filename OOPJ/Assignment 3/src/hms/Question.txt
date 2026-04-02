@@ -1,0 +1,12 @@
+Each patient has:
+● Patient ID, name, age
+● Disease
+● Contact details
+System should:
+● Store multiple patients
+● Identify senior citizens (age ≥ 60)
+● Count total patients
+Support:
+● Use object composition (Patient → ContactDetails)
+Display:
+● Patient details with status

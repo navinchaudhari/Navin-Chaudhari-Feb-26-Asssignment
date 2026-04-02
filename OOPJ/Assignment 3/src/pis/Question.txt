@@ -1,0 +1,16 @@
+Requirements:
+Each product has:
+● Product ID, name
+● Price, quantity
+
+System should:
+● Store multiple products
+● Calculate total inventory value
+● Update stock quantity
+
+Support:
+● Use constructor for initialization
+● Use method overloading for price update (discount / direct update)
+
+Display:
+● Product details and stock value
