@@ -1,0 +1,12 @@
+Question 2: Report Generator (Generic Method)
+A business analytics system needs to generate reports for different types of data (sales, employee names,
+product IDs).
+Task:
+Create a generic method to generate and display reports for any data type.
+Requirements:
+● Accept an array or list of any type
+● Print all elements in a formatted way
+● Test with:
+○ Sales figures (Integer/Double)
+○ Employee names (String)
+○ Product IDs (Integer)

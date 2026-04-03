@@ -1,0 +1,14 @@
+Question 1: E-Commerce Inventory Container
+An e-commerce company needs a flexible system to store different types of products (e.g., electronics,
+clothing, books).
+Task:
+Design a generic class Inventory<T> to store product items.
+Requirements:
+● Store a single product of type T
+● Provide methods to:
+○ Add product
+○ Retrieve product
+● Create and test the class with:
+○ Electronics objects
+○ Clothing objects
+● Display product details

@@ -1,0 +1,13 @@
+Question 3: Financial Calculator (Bounded Generics)
+A finance company needs a system to calculate totals from numerical datasets like transactions, salaries,
+or profits.
+Task:
+Implement a program using bounded generics.
+Requirements:
+● Create a method that accepts only subclasses of Number
+● Calculate:
+○ Sum
+○ Average
+● Test with:
+○ Integer transactions
+○ Double salary data
