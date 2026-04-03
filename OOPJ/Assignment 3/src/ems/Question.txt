@@ -1,0 +1,13 @@
+Question 7: Design an Employee Management System
+Requirements:
+Each employee has:
+● Employee ID, name
+● Salary
+System should:
+● Store multiple employees
+● Calculate salary with allowances
+● Track total employees
+Support:
+● Use method overloading for salary calculation
+Display:
+- Employee Salary Details
