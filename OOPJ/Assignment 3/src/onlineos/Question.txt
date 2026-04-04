@@ -1,0 +1,14 @@
+Question 8: Design an Online Order System
+Requirements:
+Each order has:
+● Order ID, customer name
+● Items and price
+System should:
+● Store multiple orders
+● Calculate total bill
+● Apply GST
+Support:
+● Use array for multiple items
+● Use constructor for initialization
+Display:
+● Final bill with details
