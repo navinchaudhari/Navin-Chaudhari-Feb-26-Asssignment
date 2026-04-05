@@ -1,0 +1,55 @@
+Q1: Online Shopping System
+Design a system for an e-commerce platform to manage products, orders, and payments.
+
+1.1 Create a class Product with:
+● productId (int)
+● productName (String)
+● price (String input from user)
+
+1.2 Add a method in Product to convert price from String to double using Wrapper class.
+
+1.3 Create a class Order with:
+● customerName (String)
+● array of Product
+
+1.4 Write a method in Order to:
+● iterate through all products
+● fetch numeric price
+● calculate and return total bill
+
+1.5 Overload the total calculation method:
+● one method → normal total
+● second method → total after applying discount (%)
+
+1.6 Create a method to generate bill using:
+● StringBuilder or StringBuffer
+● Include:
+○ customer name
+○ list of products
+○ total amount
+
+1.7 Create an interface Payment with:
+● pay(double amount)
+● refund(double amount)
+
+
+1.8 Create two classes:
+● UPIPayment
+● CardPayment
+Implement Payment and provide different messages (method overriding).
+
+1.9 In main method:
+● take user input
+● create products and order
+● ask user to choose payment type
+● call appropriate payment method
+
+1.10 Add exception handling for:
+● invalid price (NumberFormatException)
+● product count ≤ 0
+● invalid payment option
+
+1.11 Display:
+● formatted bill
+● final payable amount
+● payment success message
