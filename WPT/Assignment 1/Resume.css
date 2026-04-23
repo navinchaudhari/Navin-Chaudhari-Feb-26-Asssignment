@@ -1,0 +1,44 @@
+*body {
+  font-family: segoe ui light;
+  background-color: antiquewhite;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  background: rgba(128, 128, 128, 0.425);
+}
+/* #pesonal-details h2{
+    text-align: left;
+    background: none;
+} */
+#container {
+  width: 75%;
+  border: 2px solid;
+  border-color: black;
+  margin: 30px auto;
+  padding: 10px 30px;
+}
+#pesonal-details {
+  text-align: left;
+}
+
+#pesonal-details a {
+  text-decoration: none;
+  color: black;
+}
+#education h3{
+    margin: 0px;
+}
+#education p{
+    margin-top: 0px;
+}
+
+.head{
+    color: black;
+    font-weight: 800;
+}
+
+span{
+    font-weight: 800;
+}
