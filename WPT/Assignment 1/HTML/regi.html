@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="../CSS/regi.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <a href="#">Click here for Important Points to be noted</a>
+            <span class="mandatory">*Mandatory Field</span>
+        </div>
+
+        <form>
+
+            <!-- Name Section -->
+            <div class="row">
+                <label>First Name : <span>*</span></label>
+                <input type="text">
+                <span class="hint">(Maximum 35 Characters)</span>
+            </div>
+
+            <div class="row">
+                <label>Confirm First Name : <span>*</span></label>
+                <input type="text">
+                <span class="hint">(Maximum 35 Characters)</span>
+            </div>
+
+            <div class="row">
+                <label>Middle Name :</label>
+                <input type="text">
+                <span class="hint">(Maximum 35 Characters)</span>
+            </div>
+
+            <div class="row">
+                <label>Confirm Middle Name :</label>
+                <input type="text">
+                <span class="hint">(Maximum 35 Characters)</span>
+            </div>
+
+            <div class="row">
+                <label>Last Name :</label>
+                <input type="text">
+                <span class="hint">(Maximum 35 Characters)</span>
+            </div>
+
+            <div class="row">
+                <label>Confirm Last Name :</label>
+                <input type="text">
+                <span class="hint">(Maximum 35 Characters)</span>
+            </div>
+
+            <div class="row">
+                <label>Full Name :</label>
+                <input type="text" class="full">
+            </div>
+
+            <p class="info-text">
+                The Name entered in the online application form should match exactly with the requisite documents
+                to be oroduced at the time of examination. You will be debarred from the selection process,if there is
+                any discrepancy in the name entered by you in the online application form and the name printed on the
+                document produced at the time of examination
+                /interview. However onlu 35 characters will be printed in your call letter. Any request for changes will
+                not be entertained after submission of the application form.
+            </p>
+
+            <!-- Mobile -->
+            <div class="row">
+                <label>Mobile No :</label>
+                <div class="input-group">
+                    <span>+91</span>
+                    <input type="text">
+                </div>
+                <span class="hint">(10 digits) Please Do not prefix zero (0)</span>
+            </div>
+
+            <div class="row">
+                <label>Confirm Mobile No :</label>
+                <div class="input-group">
+                    <span>+91</span>
+                    <input type="text">
+                </div>
+                <span class="hint">(10 digits) Please Do not prefix zero (0)</span>
+            </div>
+
+            <div class="row">
+                <label>Alternative Number :</label>
+                <div class="input-group">
+                    <span>+91</span>
+                    <input type="text">
+                </div>
+                <span class="hint">(10 digits) Please Do not prefix zero (0)</span>
+            </div>
+
+            <p class="info-text">
+                Please note that the mentioned mobile number and email id will be the only way to notify you in the
+                updates.
+                It is in your own interest that the mobile no & email id should be vaild and should be kespt active till
+                the comppletion of this round of selection process. Any request for change will not be entertained after
+                submission of the application form.
+            </p>
+
+            <!-- Email -->
+            <div class="row">
+                <label>Email ID :</label>
+                <input type="text"> @
+                <select>
+                    <option> Domain Names</option>
+                </select>
+                <span class="hint">(Maximum 60 Characters)</span>
+            </div>
+
+            <div class="row">
+                <label>Confirm Email ID :</label>
+                <input type="text">
+                <span class="hint">(Maximum 60 Characters)</span>
+            </div>
+
+            <!-- Captcha -->
+            <div class="row">
+                <label></label>
+                <span class="text">Enter the word in the textbox as in the image</span>
+            </div>
+            <div class="row">
+                <label>Security Code :</label>
+                <input type="text" class="captcha-input">
+                <img src="captcha.png" alt="captcha" class="captcha-img">
+            </div>
+
+            <!-- Button -->
+            <div class="button-area">
+                <button type="submit">Save & Next</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

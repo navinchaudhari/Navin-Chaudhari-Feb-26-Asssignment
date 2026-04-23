@@ -1,0 +1,102 @@
+body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+    }
+
+    .container {
+        width: 900px;
+        margin: 20px auto;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Header */
+    .header {
+        background: #cc6a00;
+        color: #fff;
+        padding: 20px;
+    }
+
+    .header h1 {
+        margin: 0;
+    }
+
+    .header p {
+        margin: 5px 0 0;
+    }
+
+    /* Layout */
+    .main {
+        display: flex;
+        align-items: stretch; 
+    }
+
+    .left {
+        width: 65%;
+        padding: 20px;
+    }
+
+    .right {
+        width: 35%;
+        background: #f0f0f0;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        color: #cc6a00;
+        margin-bottom: 5px;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .job-title {
+        font-weight: bold;
+    }
+
+    .company {
+        font-style: italic;
+        color: #555;
+    }
+
+    ul {
+        margin-top: 5px;
+    }
+
+    /* Profile Image */
+    .profile-img {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .profile-img img {
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    /* Sidebar text */
+    .info p {
+        margin: 6px 0;
+        font-size: 14px;
+    }
+
+    .skills p {
+        margin: 5px 0;
+    }
+
+    .stars {
+        color: #cc6a00;
+    }
+
+    .footer {
+        font-size: 12px;
+        padding: 10px 20px;
+        color: #555;
+    }

@@ -1,0 +1,124 @@
+body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: auto;
+        background: #fff;
+        padding: 30px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    h1 span {
+        color: #2a9d8f;
+    }
+
+    .top-text {
+        font-size: 14px;
+        margin: 10px 0 20px;
+        color: #666;
+    }
+
+    .date-box {
+        float: right;
+        text-align: right;
+        margin-top: -60px;
+    }
+
+    .date-box input {
+        width: 30px;
+        padding: 5px;
+        margin: 2px;
+        text-align: center;
+    }
+
+    h2 {
+        margin-top: 30px;
+        font-size: 18px;
+        border-bottom: 2px solid #2a9d8f;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px 30px;
+        margin-top: 15px;
+    }
+
+    .full {
+        grid-column: span 2;
+    }
+
+    label {
+        font-size: 13px;
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    input {
+        width: 100%;
+        padding: 6px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+    }
+
+    .inline {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .inline input[type="checkbox"] {
+        width: auto;
+    }
+
+    .address {
+        margin-top: 20px;
+    }
+
+    .footer {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .signature {
+        text-align: center;
+    }
+
+    .line {
+        width: 200px;
+        border-bottom: 1px solid #000;
+        margin-bottom: 5px;
+    }
+
+    .bottom-note {
+        text-align: right;
+        margin-top: 20px;
+    }
+
+    .bottom-note span {
+        color: #2a9d8f;
+        font-weight: bold;
+    }
+
+    .school {
+        margin-top: 30px;
+    }
+
+    .school span {
+        color: #2a9d8f;
+    }

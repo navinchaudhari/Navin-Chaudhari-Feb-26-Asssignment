@@ -13,9 +13,7 @@ h2 {
     background: none;
 } */
 #container {
-  width: 75%;
-  border: 2px solid;
-  border-color: black;
+  width: 65%;
   margin: 30px auto;
   padding: 10px 30px;
 }

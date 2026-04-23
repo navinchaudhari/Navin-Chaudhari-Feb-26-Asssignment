@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="../CSS/StudentRegi.css">
+
+</head>
+
+<body>
+
+    <h2>STUDENT REGISTRATION FORM</h2>
+
+    <div class="container">
+
+        <form>
+
+            <table>
+
+                <tr>
+                    <td class="label">FIRST NAME</td>
+                    <td>
+                        <input type="text">
+                        <span class="small-text">(max 30 characters a-z and A-Z)</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">LAST NAME</td>
+                    <td>
+                        <input type="text">
+                        <span class="small-text">(max 30 characters a-z and A-Z)</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">DATE OF BIRTH</td>
+                    <td>
+                        <select class="dob">
+                            <option>Day</option>
+                        </select>
+                        <select class="dob">
+                            <option>Month</option>
+                        </select>
+                        <select class="dob">
+                            <option>Year</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">EMAIL ID</td>
+                    <td><input type="email"></td>
+                </tr>
+
+                <tr>
+                    <td class="label">MOBILE NUMBER</td>
+                    <td>
+                        <input type="text">
+                        <span class="small-text">(10 digit number)</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">GENDER</td>
+                    <td>
+                        Male <input type="radio" name="g">
+                        Female <input type="radio" name="g">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">ADDRESS</td>
+                    <td><textarea></textarea></td>
+                </tr>
+
+                <tr>
+                    <td class="label">CITY</td>
+                    <td>
+                        <input type="text">
+                        <span class="small-text">(max 30 characters a-z and A-Z)</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">PIN CODE</td>
+                    <td>
+                        <input type="text">
+                        <span class="small-text">(6 digit number)</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">STATE</td>
+                    <td>
+                        <input type="text">
+                        <span class="small-text">(max 30 characters a-z and A-Z)</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">COUNTRY</td>
+                    <td><input type="text" value="India"></td>
+                </tr>
+
+                <tr>
+                    <td class="label">HOBBIES</td>
+                    <td>
+                        Drawing <input type="checkbox">
+                        Singing <input type="checkbox">
+                        Dancing <input type="checkbox">
+                        Sketching <input type="checkbox"><br>
+                        Others <input type="checkbox">
+                        <input type="text" style="width:120px;">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">QUALIFICATION</td>
+                    <td>
+
+                        <table class="qual-table">
+                            <tr>
+                                <td>Sl.No</td>
+                                <td>Examination</td>
+                                <td>Board</td>
+                                <td>Percentage</td>
+                                <td>Year</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>Class X</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Class XII</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+
+                            <tr>
+                                <td>3</td>
+                                <td>Graduation</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+
+                            <tr>
+                                <td>4</td>
+                                <td>Masters</td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+
+                        </table>
+
+                        <div class="footer-note">
+                            (10 char max) &nbsp;&nbsp;&nbsp;&nbsp; (upto 2 decimal)
+                        </div>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">COURSES APPLIED FOR</td>
+                    <td>
+                        BCA <input type="radio" name="course">
+                        B.Com <input type="radio" name="course">
+                        B.Sc <input type="radio" name="course">
+                        B.A <input type="radio" name="course">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="center">
+                        <input type="submit" value="Submit" class="btn">
+                        <input type="reset" value="Reset" class="btn">
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

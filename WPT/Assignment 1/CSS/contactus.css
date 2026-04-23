@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+/* Container */
+.container {
+  width: 900px;
+  height: 500px;
+  margin: 50px auto;
+  display: flex;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+  background: #fff;
+}
+
+/* ================= LEFT PANEL ================= */
+.left {
+  width: 40%;
+  color: white;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+
+  /* 🔵 Blue gradient (top part) */
+  background: linear-gradient(
+    to bottom,
+    #2f3ecb 0%,
+    #1f66d1 50%,
+    #19a7d8 100%
+  );
+}
+
+/* 🟢 Teal Triangle */
+.left::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 45%;
+  background: #2ec4b6;
+
+  clip-path: polygon(0 100%, 0 20%, 70% 60%);
+  z-index: 1;
+}
+
+/* 🌸 Pink Triangle */
+.left::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 45%;
+  background: #e8a7b5;
+
+  clip-path: polygon(-40% 100%, 100% 20%, 100% 100%);
+  z-index: 1;
+}
+
+/* Keep content above shapes */
+.left * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Heading */
+.left h2 {
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+/* Info section */
+.info p {
+  font-size: 14px;
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.info i {
+  margin-right: 10px;
+  width: 20px;
+}
+
+/* Social icons */
+.social {
+  position: absolute;
+  bottom: 20px;
+  left: 100px;
+
+}
+
+.social i {
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  color: #4e5bdc;
+
+}
+
+.social i:hover {
+  transform: scale(1.2);  
+
+}
+
+/* ================= RIGHT PANEL ================= */
+.right {
+  width: 60%;
+  padding: 40px;
+  background: #fafafa;
+}
+
+.right h2 {
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+/* Form Inputs */
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 20px;
+  padding: 8px;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+/* Colored underline (as in image) */
+form input:nth-child(1) {
+  border-bottom: 2px solid #4caf50; /* green */
+}
+
+form input:nth-child(2) {
+  border-bottom: 2px solid #e91e63; /* pink/red */
+}
+
+/* Textarea */
+form textarea {
+  height: 60px;
+  resize: none;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #4e5bdc;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
