@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p><b>We</b> have just started <b>this</b> section for the users (<b>beginner</b> to
+        intermediate) who <b>want</b> to work with <b>various</b> JavaScript <b>problems</b>
+        and write scripts online to <b>test</b> their JavaScript <b>skill</b>.
+    </p>
+
+    <a href="#" onmouseover="highlight()" onmouseout="removeHighlight()">Hover on this link</a>
+    <script>
+        function highlight() {
+            const bold = document.getElementsByTagName("b");
+            for (const b of bold) {
+                b.style.color = "red";
+                b.style.fontWeight = "600";
+                b.style.fontSize = "larger";
+            }
+        }
+
+        function removeHighlight() {
+            const bold = document.getElementsByTagName("b");
+            for (const b of bold) {
+                b.style.color = "black";
+                b.style.fontWeight = "300";
+                b.style.fontSize = "large";
+            }
+        }
+    </script>
+</body>
+
+</html>

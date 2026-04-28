@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph</title>
+    <style>
+        body {
+            background: #FEFAE0;
+            width: 100%;
+        }
+
+        #container {
+            width: 450px;
+            height: 300px;
+            margin: 50px auto;
+            color: rgb(95, 95, 95);
+            border: solid 2px none;
+            border-radius: 25px;
+            padding: 20px 30px;
+            text-align: justify;
+            background: #219EBC;
+        }
+
+        #button-wrap {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            padding: 8px;
+            border-radius: 7px;
+            border: none;
+            background-color: whitesmoke;
+        }
+
+        button:hover {
+            cursor: pointer;
+            zoom: 110%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <form action="#">
+            <div>
+                <p id="text">It is rightly said that being disciplined is essential in life. When a person leads a
+                    disciplined
+                    life,
+                    they set an easy path to success. They will develop an approach to happiness and a beautiful future
+                    ahead. Being disciplined is the practice of having a scheduled daily routine which helps an
+                    individual
+                    to be punctual and hard-working. An individual is taught what being disciplined means from the time
+                    they
+                    are young. Even though discipline takes a lot of effort, the advantages of a disciplined life make
+                    it a
+                    worthwhile endeavour.</p>
+            </div>
+            <div id="button-wrap">
+                <button type="submit" onclick="changeStyle()" id="toggle">Change Style</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function changeStyle() {
+            const btn = document.getElementById("toggle");
+            let btn_text = btn.innerText;
+            if (btn_text === "Change Style") {
+                document.getElementById("text").style.color = "Black";
+                document.getElementById("text").style.font = "Arial";
+                document.getElementById("text").style.fontWeight = "600";
+                document.getElementById("text").style.fontSize = "larger";
+                btn.innerHTML = "Change to Previous"
+            } else {
+                document.getElementById("text").style.color = "rgb(95, 95, 95)";
+                 document.getElementById("text").style.fontWeight = "200";
+                 document.getElementById("text").style.fontSize = "medium"
+                btn.innerHTML = "Change Style"
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
