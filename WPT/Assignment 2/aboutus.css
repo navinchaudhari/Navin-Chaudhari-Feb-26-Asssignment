@@ -1,0 +1,72 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url("./images/image_aa894d95.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  /* width: 100%; */
+}
+
+#logo {
+  display: flex;
+  justify-content: flex-start;
+}
+#logo #brand-name {
+  padding-top: 10px;
+  font-size: x-large;
+  color: goldenrod;
+}
+
+#navbar {
+  background-color: rgba(0, 0, 0, 0.61);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
+}
+
+#navbar-tab {
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar-tab li {
+  margin: 0px 20px;
+  list-style: none;
+}
+
+#navbar img {
+  width: 40px;
+  margin: 5px 50px;
+}
+
+.page-links:hover {
+  color: goldenrod;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+#desc {
+  margin-left: 2%;
+  margin-top: 3%;
+  width: 250px;
+  height: 300px;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+#desc h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 900;;
+  margin: 0px;
+}
+#desc p {
+  font-family: segoe ui light;
+  text-align: left;
+  color: white;
+  font-size: large;
+  font-weight: 400;
+}
