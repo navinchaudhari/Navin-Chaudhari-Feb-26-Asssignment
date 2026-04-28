@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function fetchData(url, callback) {
+            setTimeout(() => {
+                //flag to make response success or reject
+                const isSuccess = true;
+
+                if (isSuccess) {
+                    callback(null, `Raw data from ${url}`);
+                } else {
+                    callback("Error: Connection timed out!", null);
+                }
+            }, 1500);
+        }
+
+        function processData(data, callback) {
+            const processed = `${data} -> [Processed and Formatted]`;
+            callback(processed);
+        }
+
+        // Chaining the functions (Exercise 5)
+        fetchData("https://www.google.com", (error, response) => {
+            if (error) {
+                console.error(error);
+            } else {
+                processData(response, (finalResult) => {
+                    console.log(finalResult);
+                });
+            }
+        });
+
+    </script>
+</body>
+
+</html>
