@@ -1,0 +1,39 @@
+.container{
+    background: linear-gradient(45deg,pink,rgba(0, 0, 255, 0.678));
+}
+.heading{
+    color: white;
+}
+
+#resultsGrid {
+  width: 450px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.349);
+  margin: 50px auto;
+  padding-left: 30px;
+  padding-left: 30px;
+  padding-top: 50px;
+  font-family: segoe UI light;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  border-radius: 35px;
+}
+
+#searchBtn{
+    background-color: white;
+    color: black;
+}
+.head{
+    margin-top: 30px;
+}
+#setup{
+    color: rgb(255, 0, 0);
+    font-size: larger;
+    font-weight: 700;
+}
+#punchLine{
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: 700;
+}
