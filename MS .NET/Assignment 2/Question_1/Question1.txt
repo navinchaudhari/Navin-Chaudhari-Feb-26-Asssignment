@@ -1,0 +1,26 @@
+﻿1. Create a new console application in C#. Implement the following classes based on the
+given requirements. Write code to demonstrate the functionality of each class.
+
+Class: Shape
+Create a class called Shape with the following properties and methods:
+Properties:
+Name: string (to store the name of the shape)
+Methods:
+CalculateArea(): An abstract method that returns the area of the shape.
+
+Class: Circle
+Inherit from the Shape class.
+Implement the CalculateArea() method to calculate and return the area of a circle
+using the formula: π * r^2 (where r is the radius).
+
+Class: Rectangle
+Inherit from the Shape class.
+Implement the CalculateArea() method to calculate and return the area of a rectangle
+using the formula: length * width.
+
+Requirements:
+ Create instances of the Circle and Rectangle classes, and set their properties (name,
+radius, length, width).
+ Demonstrate method overriding by implementing the CalculateArea() method in both
+the Circle and Rectangle classes.
+ Write code to display the name and area of each shape.

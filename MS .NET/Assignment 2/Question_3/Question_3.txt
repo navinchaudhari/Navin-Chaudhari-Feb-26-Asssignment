@@ -1,0 +1,54 @@
+﻿3. Create a new console application in C#. Implement the following classes based on the
+given requirements. Write code to demonstrate the functionality of each class.
+
+Class 1: Employee
+Define an Employee class with the following properties:
+ Name: string
+ Age: int
+ Salary: decimal
+
+Class 2: Manager
+Inherit from the Employee class.
+ Add an additional property:
+ Department: string
+
+Class 3: Developer
+Inherit from the Employee class.
+ Add an additional property:
+ ProgrammingLanguage: string
+
+Class 4: CalculateSalary
+Create a static class called CalculateSalary.
+ Implement the following methods:
+ CalculateAnnualSalary: Accepts an Employee object and calculates the annual
+salary (12 times the monthly salary).
+ CalculateBonus: Accepts an Employee object and calculates the bonus based
+on the employee's age and salary. (Bonus = Age * Salary * 0.01)
+
+Interface: IProject
+Define an interface called IProject with the following method:
+ StartProject: Accepts a string parameter and displays a message indicating the
+project has started.
+
+Abstract Class: ProjectManager
+ Define an abstract class called ProjectManager.
+ Implement the IProject interface in this class.
+ Add an abstract method called AssignTask that accepts an Employee object and a task
+description.
+ Create two derived classes that inherit from ProjectManager:
+
+ TechnicalProjectManager: Implement the AssignTask method to display a
+message indicating the task has been assigned to a developer.
+
+ HRProjectManager: Implement the AssignTask method to display a message
+indicating the task has been assigned to an HR employee.
+
+Requirements:
+1. Create instances of Employee, Manager, and Developer classes, and set their
+properties.
+2. Demonstrate method overloading by creating multiple methods with the same name
+but different parameters in the CalculateSalary class.
+3. Demonstrate method overriding by overriding the ToString() method in the Employee
+class to display relevant information.
+4. Create objects of the TechnicalProjectManager and HRProjectManager classes and
+demonstrate polymorphism by calling the AssignTask method on each object.

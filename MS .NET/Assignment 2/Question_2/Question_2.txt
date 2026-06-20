@@ -1,0 +1,33 @@
+﻿2. Create a new console application in C#. Implement the following classes based on the
+given requirements. Write code to demonstrate the functionality of each class.
+
+Class: Vehicle
+Create a class called Vehicle with the following properties and methods:
+Properties:
+Brand: string (to store the brand of the vehicle)
+Year: int (to store the manufacturing year of the vehicle)
+Methods:
+Accelerate(): An abstract method that represents the acceleration behavior of the
+vehicle.
+Brake(): An abstract method that represents the braking behavior of the vehicle.
+
+Class: Car
+Inherit from the Vehicle class.
+Implement the Accelerate() method to display a message indicating the car is
+accelerating.
+Implement the Brake() method to display a message indicating the car is braking.
+
+Class: Motorcycle
+Inherit from the Vehicle class.
+Implement the Accelerate() method to display a message indicating the motorcycle is
+accelerating.
+Implement the Brake() method to display a message indicating the motorcycle is
+braking.
+
+Requirements:
+ Create instances of the Car and Motorcycle classes, and set their properties (brand,
+year).
+ Demonstrate method overriding by implementing the Accelerate() and Brake()
+methods in both the Car and Motorcycle classes.
+ Write code to display the brand, year, and behavior (acceleration and braking) of each
+vehicle.

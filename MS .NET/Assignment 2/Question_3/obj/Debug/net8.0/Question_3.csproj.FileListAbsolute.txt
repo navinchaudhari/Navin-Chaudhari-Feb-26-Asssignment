@@ -1,0 +1,15 @@
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\bin\Debug\net8.0\Question_3.exe
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\bin\Debug\net8.0\Question_3.deps.json
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\bin\Debug\net8.0\Question_3.runtimeconfig.json
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\bin\Debug\net8.0\Question_3.dll
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\bin\Debug\net8.0\Question_3.pdb
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\obj\Debug\net8.0\Question_3.GeneratedMSBuildEditorConfig.editorconfig
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\obj\Debug\net8.0\Question_3.AssemblyInfoInputs.cache
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\obj\Debug\net8.0\Question_3.AssemblyInfo.cs
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\obj\Debug\net8.0\Question_3.csproj.CoreCompileInputs.cache
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\obj\Debug\net8.0\Question_3.sourcelink.json
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\obj\Debug\net8.0\Question_3.dll
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\obj\Debug\net8.0\refint\Question_3.dll
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\obj\Debug\net8.0\Question_3.pdb
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\obj\Debug\net8.0\Question_3.genruntimeconfig.cache
+D:\CDAC\Assignment\MS .NET\Assignment 2\Question_3\obj\Debug\net8.0\ref\Question_3.dll
